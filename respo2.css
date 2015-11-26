@@ -1,0 +1,163 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	
+	background-color: #CFCFCF;
+	color:#000;
+	margin: 0 !important;
+}
+header{
+	width: 40%;
+	height: 100px;
+	text-align: center;
+	margin:0 auto 0 auto;
+}
+.top-bar{ 
+	color:#FFF; 
+	background-color: #202020;
+	text-align: center;
+	height: 50px;
+	padding-top: 20px;
+} 
+#logo{margin-right: auto; margin-left: auto;}
+#logored{font-size: 16px; color: darkred;}
+
+a{
+	text-decoration: none !important;
+	color:#101010;
+}
+section{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+figure{
+	padding: 3px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 20px;
+	float: left;
+	background-color: #FFF;
+	border-radius: 5px;
+	color: #303030;
+	}
+figcaption{
+	border-top: 1px solid #202020;
+	padding: 5px;
+}
+img{
+	max-width: 100%;
+	height:auto;
+	width:auto;
+ 	border-radius: 5px;
+ 	}
+#content{
+	background-color: #E6E6FA;
+	border-radius:5px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 1%;
+	text-align: justify;
+	float: left; 
+}
+#menu{
+	margin-right: 1%;
+	float:left;
+	width: 20%
+}
+ul>li{
+	list-style: none;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	margin-bottom: 1%;
+	padding: 15px;
+}
+
+ul>li:hover{
+	background-color: #ffffff;
+	opacity: 0.7;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	padding: 15px;
+}
+
+footer{
+	clear: both;
+	margin-top: 20%;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 0.9em;
+	background-color: #505050;
+	padding:1% 10% 10% 10%;
+	margin-top: 20px;
+	
+}
+/*najwieksza rozdzielczosc laptopów*/
+@media only screen and (max-width: 1000px) {
+	#menu { display: block; }
+}
+/*przecietniaki;)*/
+ @media only screen and (max-width: 900px) {
+	#menu {width:88%; position:absolute; height:30px;}
+	#menu ul li {display: inline; margin-bottom: 30px;}
+	#content {width: 98%;position:relative; top: 30px;margin-top:5%;}
+
+
+}
+
+/*telefon lub IPad*/
+@media only screen and (max-width: 580px) {
+	#menu { display: none; }
+	#content {width: 98%;position:relative; top: 30px;margin-top:2%;}
+	#redlogo{display: none;}
+}
+/*---------------slider CSS---------------*/
+
+
+.container{
+  
+  	width:100%;
+ 	height:250px;
+ 	overflow:hidden;
+	border:1px solid white;
+	border-radius: 5px;
+  	position:relative;
+
+}
+.photo{
+	width:100%;
+ 	height:98%;
+ 	position:absolute;
+  	animation:round 16s infinite;
+  	opacity:0;
+ }
+
+@keyframes round{   
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+} 
+}
+img:nth-child(1){
+    animation-delay:16s
+}
+img:nth-child(2){
+    animation-delay:12s
+}
+img:nth-child(3){
+    animation-delay:8s
+}
+img:nth-child(4){
+    animation-delay:4s
+}
+
+/*-----------------form----------------*/
+#form-place{
+	border: 1px solid black;
+	
+}
